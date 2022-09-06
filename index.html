@@ -1,74 +1,106 @@
 <!DOCTYPE html>
 
 <head>
+    <style>
+        .bio {
+            width: 100%;
+            border: 3px solid black;
+        }
+        
+        .form {
+            border: 3px solid blue;
+            padding: 20px;
+            margin: auto;
+            width: max-content;
 
+        }
+
+        .video {
+            text-align: center;
+        }
+
+        .img{
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-    <table border="1">
+    <div class="form">
+        <table border="1">
 
-        <tr>
-            <th rowspan="2"> Test </th>
-            <td> Test </td>
-        </tr>
+            <tr>
+                <th rowspan="2"> Test </th>
+                <td> Test </td>
+            </tr>
 
-        <tr>
-            <td colspan="2"> Test Data</td>
-            <td> Test </td>
-        </tr>
+            <tr>
+                <td colspan="2"> Test Data</td>
+                <td> Test </td>
+            </tr>
 
-    </table>
-
-    <br/>
-
-    <form>
-        <label for="name"> Name: </label>
-        <input type="text" id="name">
+        </table>
 
         <br/>
-        <br/>
 
-        <input name="relationship" type="radio" id="single" value="single">
-        <label for="single"> Single </label>
+        <form>
+            <label for="name"> Name: </label>
+            <input type="text" id="name">
 
-        <input name="relationship" type="radio" id="married" value="married">
-        <label for="married"> Married </label>
+            <br/>
+            <br/>
 
-        <br/>
-        <br/>
-        
-        <input id="apple" type="checkbox" name="fruits[]" value="apple">
-        <label for="apple"> Apple </label>
-        
-        <input id="Pear" type="checkbox" name="fruits[]" value="Pear">
-        <label for="Pear"> Pear </label>
+            <input name="relationship" type="radio" id="single" value="single">
+            <label for="single"> Single </label>
 
-        <input id="orange" type="checkbox" name="fruits[]" value="orange">
-        <label for="orange"> Orange </label>
+            <input name="relationship" type="radio" id="married" value="married">
+            <label for="married"> Married </label>
 
-        <br/>
-        <br/>
+            <br/>
+            <br/>
+            
+            <input id="apple" type="checkbox" name="fruits[]" value="apple">
+            <label for="apple"> Apple </label>
+            
+            <input id="Pear" type="checkbox" name="fruits[]" value="Pear">
+            <label for="Pear"> Pear </label>
 
-        <input type="submit" value="submit">
+            <input id="orange" type="checkbox" name="fruits[]" value="orange">
+            <label for="orange"> Orange </label>
 
-    </form>
+            <br/>
+            <br/>
 
-    <br/>
-    <br/>
+            <input type="submit" value="submit">
 
-    <img src="IMG_0307.jpg" alt="No image found" width="200" height="300">
+        </form>
+    </div>
 
     <br/>
     <br/>
 
-    <h1> Hi! I am timus from SMU SCIS. Currently in Y2. Hobbies include: Basketball, Anime and Games.</h1>
+    <div class="img">
+        <img src="IMG_0307.jpg" alt="No image found" width="300" height="300">
+    </div>
+
+    <br/>
+    <br/>
+
+    <div class="bio"> 
+        <h1> Hi! I am timus from SMU SCIS. Currently in Y2. Hobbies include: Basketball, Anime and Games.</h1>
+    </div>
 
     <br>
     <br>
 
-    <iframe width="1000" height="315"
-        src="https://www.youtube.com/embed/kZN2yTa1HcY?autoplay=1&mute=1">
-    </iframe>
+
+    <div class="video">
+
+        <iframe width="1000" height="800"
+            src="https://www.youtube.com/embed/kZN2yTa1HcY?autoplay=1&mute=1">
+        </iframe>
+
+    </div>
 
 
 </body>
